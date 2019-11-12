@@ -1,0 +1,143 @@
+html {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Big Shoulders Text', cursive;
+}
+body {
+	background: white;
+	margin: 0;
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	color: white;
+	transition: 0.5s;
+}
+/* ---- NAVBAR ---- */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: black;
+    margin: 0;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 75px;
+    background: black;
+}
+.navLeft {
+    font-size: 2rem;
+    padding: 0 20px;
+    border-right: 1px solid white;
+}
+.navLeft a:hover {
+    color: black;
+}
+.navCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 120px;
+}
+.navCenter li {
+    padding: 10px 10px 5px 10px;
+    border-bottom: 5px solid black;
+    height: 20px;
+    letter-spacing: 3px;
+}
+.navCenter li:hover {
+    border-bottom: 5px solid white;
+}
+.navRight {
+    display: flex;
+    padding-right: 25px;
+}
+.navRight li {
+    padding: 15px;
+    line-height: 20px;
+}
+.navRight i:hover {
+    color: black;
+}
+/* --- HERO --- */
+.hero {
+	background: url('//live.staticflickr.com/65535/49052833002_06735b1104_k.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 350px;
+	width: 100%;
+	height: auto;
+    min-height: 800px;
+    text-align: center;
+}
+h1 {
+    font-size: 4.5rem;
+    margin: 0;
+    padding: 0;
+}
+hr {
+	width: 10%;
+    margin-top: 10px;
+    border-color: black;
+}
+
+/* ---- ABOUT ---- */
+.about {
+    background: #ececec;
+    text-align: center;
+    margin: 0;
+    height: 700px;
+    padding: 50px;
+    font-size: 2rem;
+}
+.about h2 {
+    margin-top: 0;
+}
+
+
+/* ---- FOOTER ----*/
+.footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    color: #8AB0AB;
+    background: #3E505B;
+    text-align: center;
+}
+.copyright {
+    width: 33.3333%;
+    margin: 0;
+    padding: 0;
+}
+.social {
+    width: 33.3333%;
+    margin: 0;
+    padding: 0;
+}
+.social i {
+    color: #8AB0AB;
+}
+.social i:hover {
+    color: white;
+}
+.resources {
+    width: 33.33333%;
+    margin: 0;
+    padding: 0;
+}
