@@ -10,6 +10,7 @@ const aboutPage = document.querySelector('.about');
 const seeMoreButton = document.querySelector('.see-more');
 const pageTwo = document.querySelectorAll('.pageTwo');
 const pageThree = document.querySelectorAll('.pageThree');
+const clicks = 0;
 
 // --- HELPER FUNCTIONS --- //
 const revealPics  = () => {
@@ -21,6 +22,13 @@ const revealPics  = () => {
         for(let i = 0; i < pageTwo.length; i++) {
             pageTwo[i].classList.remove('hide');
         }
+    }
+}
+const buttonDone = () => {
+    if (clicks === 2) {
+        seeMoreButton.textContent = 'Hide Gallery';
+    } else {
+        console.log("Gallery not fully revealed");
     }
 }
 
@@ -64,11 +72,20 @@ let imageList = [
 for(let i = 0; i < images.length; i++) {
     let source = imageList[i].toString();
     images[i].setAttribute('src', source);
+    images[i].addEventListener('click', function() {
+        console.log('Clicked!');
+    });
 }
 
+// Hamburger Menu Click
+const hamburgerClick = (x) => {
+    x.classList.toggle('change');
+}
 
-// --- SEE MORE FUNCTIONALITY --- //
-seeMoreButton.addEventListener('click', revealPics);
+// See More Functionality
+seeMoreButton.addEventListener('click', function() {
+    revealPics();
+});
 // Animate the navbar menu so users can see which menu was last clicked
 // const menuLink = document.querySelectorAll('.menuLink');
 
