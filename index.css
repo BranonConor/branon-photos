@@ -181,10 +181,7 @@ hr {
 }
 /* ---- ABOUT ---- */
 .about {
-    background: url('https://lh3.googleusercontent.com/UgwthkftlMtB0o5HWN962JWWQMquhpMK6-huZ-NO1Mt2gqF2_674IshzOhMj9DXTUL-Zh-4BKoF4E9jjDnRwI88L5_cEhoZG2CcxR7TpZCV1ptSjl4b_M5yMY8yN0JdCptRRHaUPi9sd4J5VjJZjhejPAPlP4kcAMz-NUsqlCt6AfuqVS7lIGjx8xqNfLL7etzteeWi_ig447uOGnjc4JpZXkg28mEK6CAmauc2hDsFZS9VZrLyhzM-S1nFXjclQeyPl1nP7FoTX-XBmKXoRu-0LH1wg3cYuHL9toUuV7lSEEG9zHwwNmFwpjjvgF2m0zCLwRd4JNnV_1YapiiH2mjKxF0z_l9H2m773AkJS9DFD_S3OAC4lLNWWUoZLY-acFtJ1pNhV5rVh-DUwAfZD183IzB2OXZQYtc2Y3Q4L09-42ZGeh8Eu7jCUa3M1pHYEZrQieR_-PT0_jDhtYVlXQzeC7vCpgzYeVpM5yJ9hXGQXXImBxXPaT6u7PipCjwbojRVZcLd39GAYQRwpmHeG1vNis3379GFm7IeRUyDi6_Zan7DgJrnyVgitEgph2FhrhCqSLSFbHF6m_OR66qPsQTCn_UXX-I8ksD3lDNNQn745GEujGGfTi-IJbD6PIiomDvSmk-dq4-WIvUOIgHZZI5V-0so-u87Uw1HgdhsBG7gl-Pv9ozV86Q=w2596-h1730-no');
-    background-size: cover;
-	background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: #ECECEC;
     text-align: center;
     margin: 0;
     height: auto;
@@ -197,14 +194,9 @@ hr {
 .about h2 {
     margin-top: 50px;
     font-size: 2rem;
-    color: white;
 }
 .about p {
     font-size: 1.5rem;
-    color: white;
-}
-.about hr {
-    border-color: white;
 }
 
 /* ---- PORTFOLIO ---- */
@@ -225,11 +217,15 @@ hr {
     text-align: center;
 }
 img {
-    max-width: 33.333333%;
+    max-width: 100%;
     height: auto;
 }
 img:hover {
     opacity: 0.9;
+}
+.lightbox {
+    max-width: 33.333333%;
+    height: auto;
 }
 .see-more {
     padding: 35px;
