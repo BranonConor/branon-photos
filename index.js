@@ -10,6 +10,7 @@ const aboutPage = document.querySelector('.about');
 const seeMoreButton = document.querySelector('.see-more');
 const pageTwo = document.querySelectorAll('.pageTwo');
 const pageThree = document.querySelectorAll('.pageThree');
+const links = document.querySelectorAll('.lightbox');
 const clicks = 0;
 
 // --- HELPER FUNCTIONS --- //
@@ -72,9 +73,7 @@ let imageList = [
 for(let i = 0; i < images.length; i++) {
     let source = imageList[i].toString();
     images[i].setAttribute('src', source);
-    images[i].addEventListener('click', function() {
-        console.log('Clicked!');
-    });
+    links[i].setAttribute('href', source);
 }
 
 // Hamburger Menu Click
