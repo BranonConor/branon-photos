@@ -21,7 +21,7 @@ a {
 /* -- RESPONSIVENESS -- */
 /* Large Desktop */
 @media only screen and (max-width: 4000px) {
-    img {
+    .lightbox {
         max-width: 33.33333%;
         padding: none;
     }
@@ -31,13 +31,13 @@ a {
 }
 /* Small Desktop */
 @media only screen and (max-width: 1200px) {
-    img {
+    .lightbox {
         max-width: 50%;
     }
 }
 /* Tablet */
 @media only screen and (max-width: 700px) {
-    img {
+    .lightbox {
         min-width: 100%;
     }
     .nav .navRight {
@@ -242,6 +242,26 @@ img:hover {
 .see-more:hover {
     background: #3E505B;
 }
+/* --- FORM --- */
+.form-wrapper {
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+}
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    padding: 20px;
+}
+form button {
+    text-align: center;
+    width: 20vw;
+}
+
 /* ---- FOOTER ----*/
 .footer {
     width: 100%;
@@ -275,4 +295,3 @@ img:hover {
     margin: 0;
     padding: 0;
 }
-
