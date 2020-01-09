@@ -180,29 +180,38 @@ hr {
     color: #8AB0AB;
 }
 /* ---- ABOUT ---- */
+#about {
+    padding-top: 100px;
+}
 .about {
-    background-color: #ECECEC;
+    background-color: #EEE;
     text-align: center;
     margin: 0;
-    height: auto;
-    padding-top: 50px;
+    height: 90vh;
     font-size: 2rem;
-}
-.extend-length {
-    height: 1500px;
 }
 .about h2 {
-    margin-top: 50px;
     font-size: 2rem;
+    margin-top: 15px;
 }
 .about p {
     font-size: 1.5rem;
 }
-
+.about hr {
+    width: 5vw;
+}
+.about i {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    transition: 0.5s;
+}
+.about:hover i {
+    transform: translateY(-10px) scale(1.15);
+}
 /* ---- PORTFOLIO ---- */
 #portfolio {
-    padding-top: 95px;
-    margin-top: 400px;
+    padding-top: 150px;
+    margin-top: 365px;
     opacity: 0;
 }
 .portfolio {
@@ -240,26 +249,77 @@ img:hover {
     background-color: black;
 }
 .see-more:hover {
-    background: #3E505B;
+    background-color: #3E505B;
 }
 /* --- FORM --- */
 .form-wrapper {
     margin: auto;
-    padding: 100px;
+    padding: 200px 100px 100px 100px;
     text-align: center;
+    color: white;
+}
+.form-wrapper h2 {
+    letter-spacing: 3px;
+    padding-top: 10px;
 }
 form {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    letter-spacing: 3px;
+    margin-top: 50px;
+}
+.form-wrapper i {
+    transition: 0.5s;
+}
+.form-wrapper:hover i {
+    transform: translateY(-25px) scale(1.15);
+    transition: 0.5s;
 }
 label {
-    padding: 20px;
+    margin: 10px;
+}
+label p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 form button {
     text-align: center;
-    width: 20vw;
+    width: 5vw;
+    outline: none;
+    color: white;
+    font-family: 'Big Shoulders Text', cursive;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background-color: black;
+    padding: 0px;
+}
+form button:hover {
+    background-color: #3E505B;
+}
+input {
+    font-family: 'Big Shoulders Text', cursive;
+    width: 25vw;
+    height: 3vh;
+    line-height: 10px;
+    font-size: 1.05rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background: black;
+    color: white;
+}
+
+textarea {
+    width: 25vw;
+    height: 5vh;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background: black;
+    color: white;
 }
 
 /* ---- FOOTER ----*/
