@@ -16,18 +16,18 @@
             <h1>BRANON CONOR EUSEBIO</h1>
             <hr>
             <p>Photography & Digital Artistry</p>
-            <a class='enterButton' href='#home'><i class="fas fa-arrow-circle-down fa-3x"></i></a>
+            <a class='enterButton' href='#about'><i class="fas fa-arrow-circle-down fa-3x"></i></a>
         </div>
         <!-- NAVBAR -->
         <div id='home' class='navbar'>
             <div class='nav'>
                 <div data-aos='fade-right' data-aos-duration='800' class='navLeft'>
-                    <a class='brand homeLink' href='#home'>B.C.E.</a>
+                    <a class='brand homeLink' href='#about'>B.C.E.</a>
                 </div>
                 <div class='navCenter'>
-                    <a class='menuLink' data-aos='fade-right' data-aos-duration='1000' href='#about'>About</a>
-                    <a class='menuLink' data-aos='fade-right' data-aos-duration='1300' href='#portfolio'>Portfolio</a>
-                    <a class='menuLink' data-aos='fade-right' data-aos-duration='1600' href='#contact'>Contact</></a>
+                    <a class='menuLink' href='#about'>About</a>
+                    <a class='menuLink' href='#portfolio'>Portfolio</a>
+                    <a class='menuLink' href='#contact'>Contact</></a>
                 </div>
                 <div class='navRight'>
                     <li data-aos='fade-right' data-aos-duration='1800'><a href='https://instagram.com/photosbyanasian' target='_blank'><i class="fab fa-instagram fa-2x footerIcon"></i></a></li>
@@ -40,19 +40,31 @@
                     <div class='bar3'></div>
                 </div>
             </div>
+            <div class='navMobile'>
+                <a class='mobileLink display-none' href='#about'>About</a>
+                <a class='mobileLink display-none' href='#portfolio'>Portfolio</a>
+                <a class='mobileLink display-none' href='#contact'>Contact</></a>
+                <div class='mobileSocial'>
+                    <a class='mobileLink display-none' href='https://instagram.com/photosbyanasian' target='_blank'><i class="fab fa-instagram fa-2x footerIcon"></i></a>
+                    <a class='mobileLink display-none' href='https://facebook.com/branon.eusebio' target='_blank'><i class="fab fa-facebook-square fa-2x footerIcon"></i></a>
+                    <a class='mobileLink display-none' href='https://www.linkedin.com/in/branonconor/' target='_blank'><i class="fab fa-linkedin fa-2x footerIcon"></i></a>
+                </div>
+            </div>
         </div>
         <!-- ABOUT -->
-        <div class="about">
-            <div id="about"></div>
+        <div class="about" id='about'>
             <i class="fas fa-camera-retro"></i>
             <h2 data-aos='fade-down' data-aos-duration='2000'>Hi, I'm Branon.</h2>
             <hr data-aos='fade-down' data-aos-duration='2300'>
             <p data-aos='fade-down' data-aos-duration='2500'>I'm an award-winning freelance photographer.</p>
             <p data-aos='fade-down' data-aos-duration='3000'>Welcome to my gallery.</p>
-            <div id= 'portfolio'></div>
+            <div class='about-me'>
+                <p>I'm a Southern California native currently based in San Diego. I've been doing photography since I was in high school, and I have years of experience shooting almost anything including: landscape, lifestyle, product, portraiture, weddings, and more!</p>
+                <p>Currently, my primary hustle is web development and digital marketing. My photographic services are always available and I still love working on photography projects on the side, or shooting for fun on the weekends.</p>
+            </div>
         </div>
         <!-- PORTFOLIO -->
-        <div class='recent-photos'>
+        <div class='recent-photos' id='portfolio'>
             <h2>RECENT PHOTOS</h2>
         </div>
         <div class='portfolio'>
@@ -89,8 +101,7 @@
             <button class='see-more'>SEE MORE</button>
         </div>
         <!-- CONTACT -->
-        <div class="form-wrapper">
-            <div id='contact'></div>
+        <div class="form-wrapper" id='contact'>
             <i class="far fa-paper-plane fa-3x"></i>
             <h2>Contact Me.</h2>
             <p>For projects, prints, or anything else - I'm always happy to help!</p>
@@ -98,11 +109,11 @@
             <form action="https://formspree.io/mjvgnekn" method="POST">
             <label>
                 <p>Full Name</p>
-                <input type="text" name="_replyto">
+                <input type="text" name="name">
             </label>
             <label>
                 <p>Email</p>
-                <input type="email" name="_contact">
+                <input type="email" name="_replyto">
             </label>
             <label>
                 <p>Leave a Message</p>
@@ -121,9 +132,9 @@
                 <p>Designed & Built by AXN Creative</p>
             </div>
             <div class='social'>
-                <p><a href="#"><i class="fab fa-instagram fa-2x footerIcon"></i></a></p>
-                <p><a href="#"><i class="fab fa-facebook-square fa-2x footerIcon"></i></a></p>
-                <p><a href="#"><i class="fab fa-linkedin fa-2x footerIcon"></i></a></p>
+                <p><a href='https://instagram.com/photosbyanasian' target='_blank'><i class="fab fa-instagram fa-2x footerIcon"></i></a></p>
+                <p><a href='https://facebook.com/branon.eusebio' target='_blank'><i class="fab fa-facebook-square fa-2x footerIcon"></i></a></p>
+                <p><a href='https://www.linkedin.com/in/branonconor/' target='_blank'><i class="fab fa-linkedin fa-2x footerIcon"></i></a></p>
             </div>
             <div class='resources'>
                 <p>About Branon</p>

@@ -11,7 +11,9 @@ const seeMoreButton = document.querySelector('.see-more');
 const pageTwo = document.querySelectorAll('.pageTwo');
 const pageThree = document.querySelectorAll('.pageThree');
 const links = document.querySelectorAll('.lightbox');
-const clicks = 0;
+const hamburger = document.querySelector('.hamburger');
+const navMobile = document.querySelector('.navMobile');
+const mobileLinks = document.querySelectorAll('.mobileLink');
 
 // --- HELPER FUNCTIONS --- //
 const revealPics  = () => {
@@ -25,11 +27,14 @@ const revealPics  = () => {
         }
     }
 }
-const buttonDone = () => {
-    if (clicks === 2) {
-        seeMoreButton.textContent = 'Hide Gallery';
-    } else {
-        console.log("Gallery not fully revealed");
+const expandMenu = () => {
+    // take the mobile nav menu and reveal it on a hamburger click
+    navMobile.classList.toggle('revealNavMobile');
+}
+const showMobileMenu = () => {
+    // loop through each mobile menu link, remove the "display none" and 
+    for (let i = 0; i< mobileLinks.length; i++) {
+        mobileLinks[i].classList.toggle('display-none');
     }
 }
 
@@ -85,12 +90,9 @@ const hamburgerClick = (x) => {
 seeMoreButton.addEventListener('click', function() {
     revealPics();
 });
-// Animate the navbar menu so users can see which menu was last clicked
-// const menuLink = document.querySelectorAll('.menuLink');
 
-// for (let i = 0; i < menuLink.length; i++) {
-//     menuLink[i].addEventListener('click', function() {
-//         this.classList.toggle('clicked');
-//         console.log(this.classList);
-//     });
-// }
+// Expand Mobile Menu
+hamburger.addEventListener('click', function() {
+    expandMenu();
+    setTimeout(showMobileMenu, 250);
+});
